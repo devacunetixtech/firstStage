@@ -15,7 +15,7 @@ app.get('/api', (req, res) => {
   const currentDayName = daysOfWeek[currentDayIndex];
 
   // Get the current UTC time within a +/-2 minute window
-  const currentTime = new Date().toISOString();
+  const currentTime = new Date().toISOString().slice(0, -5) + 'Z';;
 
   // Construct the response JSON
   const response = {
