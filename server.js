@@ -19,10 +19,10 @@ app.get('/api', (req, res) => {
 
   // Construct the response JSON
   const response = {
-    slack_name: slack_name || "AcunetixTechie",
+    slack_name: slack_name,
     current_day: currentDayName,
     utc_time: currentTime,
-    track: track || "backend",
+    track: track,
     github_file_url: "https://github.com/devacunetixtech/hngstage1/blob/main/index.js",
     github_repo_url: "https://github.com/devacunetixtech/hngstage1",
     status_code: 200,
